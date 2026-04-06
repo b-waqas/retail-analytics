@@ -1,4 +1,4 @@
-# Retail Analytics Portfolio Project – SQL Data Analysis
+# Retail Analytics Project – SQL Data Analysis
 
 ## Project Overview
 
@@ -12,10 +12,12 @@ This project demonstrates my data cleaning and SQL analysis skills for a retail 
 
 ## Dataset Description
 
-The dataset contains **online retail transaction lines** (no order-level grouping). Each row represents one product purchased in a customer transaction.
+The dataset contains **online retail transaction lines** (no order-level grouping). Each row represents one product 
+purchased in a customer transaction.
 
 ### Original Data Source
-- [Online Retail Data Set on Kaggle](https://www.kaggle.com/datasets/ertugrulesol/online-retail-data) (modified for cleaning practice)
+- [Online Retail Data Set on Kaggle](https://www.kaggle.com/datasets/ertugrulesol/online-retail-data)
+- (modified for cleaning practice)
 
 ### Columns After Cleaning
 
@@ -54,9 +56,37 @@ The file `retail_analysis.sql` contains 6 analytical queries:
 4. **Average Transaction Value by Payment Method** – Compares payment method performance.
 5. **Customer Demographics with Rating Status** – Segments by gender, age, and rating status.
 6. **Products with Low Ratings (<average)** – Flags underperforming products.
+<div style="color: white; background-color: #0d1117; padding: 20px; border-radius: 8px; font-size: 1.2rem; line-height: 1.5;">
+  
+## Setup Instructions
+
+1. **Import the cleaned dataset** into your preferred SQL environment  
+   (SQLite, MySQL, PostgreSQL, or even Excel Power Query).  
+2. Run the provided queries to reproduce the analysis.
+
+> **Note:** The dataset itself is **not included** in this repository due to size constraints or original source licensing.  
+> You can download it from the Kaggle link above and apply the cleaning steps described in this repo.
+
+## Portfolio Purpose
+This project is part of my **freelance data analyst portfolio** for platforms like **Fiverr** and **Upwork**.  
+It demonstrates:
+- Real-world data cleaning
+- Professional SQL query writing
+- Business-oriented metrics
+- Attention to data quality (handling missing values, creating derived columns)
+## Next Steps
+
+**The next phase of this project (not included here)** is a **Power BI dashboard** visualizing these insights.  
+Check my other repositories or portfolio for the interactive version.
+
+---
+
+**Author:** Bazgha Waqas  
+**Role:** Freelance Data Analyst  
+**Skills:** SQL, Excel, Power BI, Data Cleaning  
+**Contact:** [https://www.fiverr.com/sellers/bazgha_waqas](https://www.fiverr.com/sellers/bazgha_waqas)
 
 ## Sample Query (Top Customers)
-
 ```sql
 SELECT 
     customer_id,
@@ -66,3 +96,4 @@ FROM retail_sales
 GROUP BY customer_id
 ORDER BY lifetime_value DESC
 LIMIT 10;
+
